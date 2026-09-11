@@ -1,0 +1,227 @@
+/* CLEA System - Responsive Design */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .detail-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.3em; }
+    h3 { font-size: 1.1em; }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.2em;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-link {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .detail-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail-actions {
+        width: 100%;
+    }
+
+    .detail-actions .btn {
+        width: 100%;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .photos-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .photo-item {
+        height: 150px;
+    }
+
+    .photo-item img {
+        height: 150px;
+    }
+
+    .machinery-card .card-footer {
+        flex-direction: column;
+    }
+
+    .machinery-card .card-footer .btn {
+        width: 100%;
+    }
+
+    .login-box {
+        padding: 20px 15px;
+    }
+
+    .detail-header h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 { font-size: 1.3em; }
+    h2 { font-size: 1.1em; }
+
+    .navbar-container {
+        padding: 10px 5px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1em;
+    }
+
+    .navbar-menu {
+        gap: 5px;
+    }
+
+    .nav-link {
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .btn-lg {
+        padding: 10px 16px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .dashboard {
+        padding: 15px;
+    }
+
+    .machinery-page,
+    .new-installation-page,
+    .edit-machinery-page,
+    .new-maintenance-page,
+    .machinery-detail {
+        padding: 15px;
+    }
+
+    .detail-grid {
+        gap: 10px;
+    }
+
+    .detail-item {
+        padding: 8px;
+    }
+
+    .photos-gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .photo-item img {
+        height: 200px;
+    }
+
+    .maintenance-record {
+        padding: 12px;
+    }
+
+    .login-box {
+        padding: 15px 10px;
+    }
+
+    .search-form {
+        gap: 8px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .footer,
+    .detail-actions,
+    .form-actions,
+    .btn {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .container,
+    .machinery-detail,
+    .detail-section {
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .photos-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
